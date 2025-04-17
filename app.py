@@ -2,7 +2,7 @@ import requests
 
 def ola_mundo():
  response = requests.get("https://api.github.com")
- print (f"Olá, turma! API Status: {response}")
+ return (f"Olá, turma! API Status: {response.status_code}")
 
 if __name__ == "__main__":
- ola_mundo()
+ print(ola_mundo())
